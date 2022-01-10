@@ -4,5 +4,5 @@
 
   function solve() {
     let a = document.getElementById("myInput").value;
-    document.getElementById("myInput").value = eval(x);
+    document.getElementById("myInput").value = eval(a);
   }
