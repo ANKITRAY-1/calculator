@@ -1,18 +1,126 @@
-﻿input[type="button"] {
-    width: 50px;
-    height: 50px;
+﻿body{
+    overflow: hidden;
+}
+
+
+input[type="button"] {
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    border: black;
+    font-size: 20px;
 }
 
 table {
+    box-shadow:0px 0px 100px rgb(2, 255, 65);
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    border-radius: 20px;
+    background-color: rgb(83, 83, 83);
 }
-input[type="text"]{
-    height: 50px;
-    width: 206px;
+input[type="custom"]{
+    text-align: right;
+    font-size: 30px;
+    height: 100px;
+    width: 266px;
+    border-radius: 10px;
+    padding: 4px;
+    border: none;
+    border-bottom:2px solid black;
 }
 td{
-    max-width: 52px;
+    max-width: 62px;
+    padding: 5px;
 }
+
+@media screen and (max-width:300px) {
+    table{
+        width: 100%;
+    }
+}
+
+ span {
+    position: absolute;
+    display: block;
+  }
+  
+  span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(90deg, transparent, #ff4e4e);
+    animation: btn-anim1 2s linear infinite;
+  }
+  
+  @keyframes btn-anim1 {
+    0% {
+      left: -100%;
+    }
+    50%,
+    100% {
+      left: 100%;
+    }
+  }
+  
+   span:nth-child(3) {
+    top: -100%;
+    right: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #ff4e4e);
+    animation: btn-anim2 2s linear infinite;
+    animation-delay: 0.25s;
+  }
+  
+  @keyframes btn-anim2 {
+    0% {
+      top: -100%;
+    }
+    50%,
+    100% {
+      top: 100%;
+    }
+  }
+  
+   span:nth-child(2) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(270deg, transparent, #ff4e4e);
+    animation: btn-anim3 2s linear infinite;
+    animation-delay: 0.25s;
+  }
+  
+  @keyframes btn-anim3 {
+    0% {
+      right: -100%;
+    }
+    50%,
+    100% {
+      right: 100%;
+    }
+  }
+  
+   span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #ff4e4e);
+    animation: btn-anim4 2s linear infinite;
+    animation-delay: 0.25s;
+  }
+  
+  @keyframes btn-anim4 {
+    0% {
+      bottom: -100%;
+    }
+    50%,
+    100% {
+      bottom: 100%;
+    }
+  }
