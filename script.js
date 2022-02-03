@@ -101,8 +101,8 @@ this.addEventListener("keypress", (event) => {
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-var inputEl = document.getElementById('custom');
-var goodKey = '0123456789+-*/()% ';
+var inputEl = document.getElementById('tel');
+var goodKey = '0123456789+-/*() ';
 
 var checkInputTel = function(e) {
   var key = (typeof e.which == "number") ? e.which : e.keyCode;
